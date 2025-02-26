@@ -1,0 +1,62 @@
+
+
+.missions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between elements */
+}
+
+.mission img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    
+}
+
+.mission{
+    flex-basis: 20%;
+    position: relative;
+    margin: 0 10px;
+        
+    }
+
+
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(152, 103, 137, 0.4);
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    color: #000000;
+    opacity: 0;
+    cursor: pointer;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+
+.caption img{
+    width: 50px;
+    margin-bottom: 10px;
+
+}
+
+.mission:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+
+.missions > div:last-child {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}

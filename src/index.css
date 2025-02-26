@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: "Outfit", serif;
+}
+
+body{
+    background: #3B2A36;
+}
+
+a{
+    text-decoration: none;
+    line-height: 1;
+    color: inherit;
+    
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.btn{
+    padding: 14px 25px;
+    font-size: 18px;
+    color: #3B2A36;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+

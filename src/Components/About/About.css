@@ -1,0 +1,79 @@
+.about {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+.about-left {
+    flex-basis: 90%;
+}
+
+.image-container {
+    position: relative;
+    width: 70%;
+    margin-left: 70px;
+}
+
+.a1 {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(152, 103, 137, 0.4); /* Semi-transparent overlay */
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    color: #000000;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.4s ease, padding-top 0.4s ease; /* Smooth hover effect */
+    padding-top: 70%;
+    z-index: 1;
+}
+
+.caption img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Hover effect limited to the .a1 image */
+.image-container:hover .caption {
+    opacity: 1; /* Make caption visible */
+    padding-top: 0; /* Reset padding for smooth transition */
+}
+
+.about-right {
+    flex-basis: 100%;
+}
+
+.about h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+.about h2 {
+    font-size: 37px;
+    color: white;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+.about p {
+    margin-bottom: 15px;
+}

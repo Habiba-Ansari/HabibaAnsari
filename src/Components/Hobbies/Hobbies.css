@@ -1,0 +1,48 @@
+.hobbies{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px auto;
+    width: 90%;
+    
+}
+
+.hob img{
+    width: 100%;
+    display: block;
+    
+    border-radius: 10px;
+    
+}
+
+.hob{
+    flex-basis: 31%;
+    padding: 10px;
+    position: relative;
+}
+
+.cap{
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(152, 103, 137, 0.4);
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    color: #000000;
+    opacity: 0;
+    cursor: pointer;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+
+.hob:hover .cap{
+    opacity: 1;
+    padding-top: 0;
+}
